@@ -13,8 +13,22 @@ public class luis {
     
     public static void main(String [] args){
         
-         System.out.println("mi primer programa java"); 
+         System.out.println("Mi primer programa en Java"); 
+         
+         //Declaro  mi objeto (dato compuesto).
+         Imc objeto = new Imc (); //Inicia constructor (inicia los atributos).
+         //clase que definimos Imc.
+         System.out.println(objeto.calcular()); //Imprimi mi valor calcular.
+         
+         
+         //float peso = 78;
+         //float altura =(float) 1.90;
+         
+        // float imc = peso/(altura*altura);
+        // System.err.println("tu imc es " +imc);
+         
+         
     }
-  
 
+    
 }
