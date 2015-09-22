@@ -15,10 +15,31 @@ public class Imc {
     float altura; // Mi segundo variable
     
     
-    public Imc (){ //Inicializar los atributos.
+    public Imc () { //Inicializar los atributos.
         
      peso = 78;
      altura = (float) 1.90;
+        
+    }
+    
+    public Imc (float f) {
+        //ESTE CODIGO NO TYIENE NADA QUE VER CON LOS CONSTRUTORES
+        byte b=2;
+        short s=2;
+        int i=2;
+        long l=2;
+        //Reasignamos tipos no a los valores
+        //Casting (promocion)
+        b=(byte)i;
+        l=i;
+        s=(short)l;
+        s=b;
+        l=s;
+        s=(short)l;
+        s=(short)i;
+        l=b;
+        
+        
         
     }
     
