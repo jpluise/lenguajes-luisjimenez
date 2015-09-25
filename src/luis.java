@@ -20,7 +20,18 @@ public class luis {
          //clase que definimos Imc.
          System.out.println(objeto.calcular()); //Imprimi mi valor calcular.
          
+        
+          // public class Wrapper {
+        
+          
+        // String x= "12";
          
+        // float valor = Float.parseFloat(x);
+         
+      //   System.out.println(valor);
+         
+    //}
+       
          //float peso = 78;
          //float altura =(float) 1.90;
          
@@ -31,4 +42,4 @@ public class luis {
     }
 
     
-}
+    }   

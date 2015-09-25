@@ -14,6 +14,11 @@ public class Imc {
     float peso; //Mi primer variable
     float altura; // Mi segundo variable
     
+    public  Imc (float p, float a){ // Varibles locales.  Constructor
+        
+        peso = p;
+        altura = a;
+    }
     
     public Imc () { //Inicializar los atributos.
         
@@ -46,11 +51,42 @@ public class Imc {
     //Mi tecer variable
     public float calcular () { //Mi tipo de valor que me volvera, no lo ve el main.
         
+        
+        
         float resultadoImc = peso/(altura*altura);
         // Me regresa mi resultadoImc
         return resultadoImc;
         
-    }
+       if ( resultadoImc < 20) {
+       System.out.println("Estas demasiado flaxco");
+        
+        } else{
+           
+       if (resultadoImc = 25) {
+      System.out.println("Estas sano");
+           
+       }else{
+             
+       if ( resultadoImc 25 > 30) {
+       System.out.println("Fuera del rango");
+               
+       }else{
+       
+       if ( resultadoImc  > 30) {
+       System.out.println("Estas con sobrepeso");
+                
+             }
+              
+           }
+           
+       }
+       
+           
+           
+       
+        
+        
+    
     
  
-}
+
