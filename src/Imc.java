@@ -49,44 +49,21 @@ public class Imc {
     }
     
     //Mi tecer variable
-    public float calcular () { //Mi tipo de valor que me volvera, no lo ve el main.
+    public String calcular () { //Mi tipo de valor que me volvera, no lo ve el main.
         
+        String mensaje ="nada";
         
-        
-        float resultadoImc = peso/(altura*altura);
+      float resultadoImc = peso/(altura*altura);
         // Me regresa mi resultadoImc
-        return resultadoImc;
-        
-       if ( resultadoImc < 20) {
-       System.out.println("Estas demasiado flaxco");
-        
-        } else{
+     if ( resultadoImc < 20)mensaje ="eres anorexica" ;
            
-       if (resultadoImc = 25) {
-      System.out.println("Estas sano");
-           
-       }else{
-             
-       if ( resultadoImc 25 > 30) {
-       System.out.println("Fuera del rango");
-               
-       }else{
+    else if(resultadoImc>=20 || resultadoImc <25) mensaje="estas bien";
        
-       if ( resultadoImc  > 30) {
-       System.out.println("Estas con sobrepeso");
-                
-             }
-              
-           }
-           
-       }
-       
-           
-           
-       
-        
-        
+    else if(resultadoImc >=25 || resultadoImc <30)mensaje="te pasaste";
     
-    
+     else mensaje ="eres un obeso";
+          
+   return mensaje + "tu imc es:" + resultadoImc;
  
-
+    }
+}
