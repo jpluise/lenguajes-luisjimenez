@@ -21,9 +21,20 @@ public class PruebaThreads implements Runnable { //NO HAY METODOS ANIDADOS EN JA
         Runnable r2 = new PrimerThread(); //polimorfismo
         Thread t2 = new Thread(r2);
         
+        
+        //tercer forma de crear trheads
+        //usando clases internas anonimas(interface runnable)
+        Thread t3=new Thread(new Runnable(){
+
+            @Override
+            public void run() {
+                System.out.println("Yo soy un thread como clase interna anonima");
+            }
+            
+        });
          t1.start();
          t2.start();
-        
+         t3.start();
 }
     public void run () {
      
