@@ -49,15 +49,15 @@ for(int i=0; i<=200; i++){
     
     //vamos agraficar la funcion seno
     
-    double xsen0=-2*Math.PI-1;
-    double xsen1=-2*Math.PI;
+    double xsen0=-100*Math.PI-1;
+    double xsen1=-100*Math.PI;
     double ysen0;
     double ysen1;
     
 
-    for(int i=0; i<=200; i++){
-    ysen0=Math.sin(xsen0);
-    ysen1=Math.sin(xsen1);
+    for(int i=0; i<=600; i++){
+    ysen0=100*Math.sin(xsen0*(apertura*5));
+    ysen1=100*Math.sin(xsen1*(apertura*5));
     
  g.drawLine((int)xsen0, (int)ysen0, (int) xsen1,(int)ysen1);//casting forzado
  xsen0++;
